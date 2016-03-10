@@ -29,6 +29,10 @@ class ViewController: UIViewController {
         } else if sender.tag == 1010 {
             self.displayLabel.append(0)
             self.displayLabel.append(0)
+        } else if sender.tag == 999{
+            self.displayLabel.floatValue = (self.displayLabel.floatValue / 100);
+        } else if sender.tag == 998{
+            self.displayLabel.addPoint();
         }
     }
 
@@ -44,6 +48,10 @@ class ViewController: UIViewController {
             try! self.core.addStep(+)
         case "-":
             try! self.core.addStep(-)
+        case "x":
+            try! self.core.addStep(*)
+        case "÷":
+            try! self.core.addStep(/)
         default:
             break
         }

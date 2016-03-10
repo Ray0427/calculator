@@ -53,5 +53,14 @@ class DisplayLabel: UILabel {
         }
         self.text = self.negative ? text.substringFromIndex(text.startIndex.advancedBy(1)) : "-" + text
     }
+    func addPoint() {
+        guard let text = self.text  else {
+            return
+        }
+        if text.containsString("."){
+            return
+        }
+        self.text =  text+".";
+    }
 
 }
