@@ -25,18 +25,18 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZpK-Vg-yqH">
                                         <rect key="frame" x="0.0" y="0.0" width="328" height="82"/>
                                         <subviews>
-                                            <button opaque="NO" tag="999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfx-Iq-NlJ">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrh-f2-kuZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
                                                 <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Qfx-Iq-NlJ" secondAttribute="height" multiplier="1:1" priority="750" id="dMM-BB-X4t"/>
+                                                    <constraint firstAttribute="width" secondItem="xrh-f2-kuZ" secondAttribute="height" multiplier="1:1" priority="750" id="aV0-Qa-Muj"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
-                                                <state key="normal" title="％">
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                                <state key="normal" title="AC">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="numericButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mzb-A9-vIb"/>
+                                                    <action selector="resetButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j4p-fF-iCs"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5p-nb-cWc">
@@ -45,7 +45,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="v5p-nb-cWc" secondAttribute="height" multiplier="1:1" priority="750" id="V72-zG-fOw"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
                                                 <state key="normal" title="+/-">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -53,18 +53,18 @@
                                                     <action selector="negativeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vbx-nR-31F"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrh-f2-kuZ">
+                                            <button opaque="NO" tag="999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfx-Iq-NlJ">
                                                 <rect key="frame" x="164" y="0.0" width="82" height="82"/>
                                                 <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="xrh-f2-kuZ" secondAttribute="height" multiplier="1:1" priority="750" id="aV0-Qa-Muj"/>
+                                                    <constraint firstAttribute="width" secondItem="Qfx-Iq-NlJ" secondAttribute="height" multiplier="1:1" priority="750" id="dMM-BB-X4t"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
-                                                <state key="normal" title="AC">
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                                <state key="normal" title="％">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="resetButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j4p-fF-iCs"/>
+                                                    <action selector="numericButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mzb-A9-vIb"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKz-se-kbt">
@@ -73,7 +73,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="HKz-se-kbt" secondAttribute="height" multiplier="1:1" priority="750" id="n1C-M3-gdc"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
                                                 <state key="normal" title="÷">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -139,8 +139,8 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="tZB-Pv-2kB" secondAttribute="height" multiplier="1:1" priority="750" id="olR-SR-FkK"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
-                                                <state key="normal" title="x">
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                                <state key="normal" title="×">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
